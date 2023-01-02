@@ -1,7 +1,7 @@
 FROM centos:latest
 MAINTAINER karolchru@gmail.com
-RUN yum update -y
-RUN yum install -y httpd \
+RUN sudo yum update -y
+RUN sudo yum install -y httpd \
  zip\
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/cobsine.zip /var/www/html/
