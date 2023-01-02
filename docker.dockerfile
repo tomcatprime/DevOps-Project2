@@ -9,4 +9,4 @@ RUN unzip cobsine.zip
 RUN cp -rvf cobsine/* .
 RUN rm -rf conbsine cobsine.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80 20 8080
+EXPOSE 80 20
