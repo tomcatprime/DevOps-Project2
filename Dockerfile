@@ -2,7 +2,7 @@ FROM redhat/ubi9
 MAINTAINER karolchru@gmail.com
 RUN yum update -y
 RUN yum install -y httpd \
- zip\
+ zip \
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/cobsine.zip /var/www/html/
 WORKDIR /var/www/html/
