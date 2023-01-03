@@ -1,6 +1,6 @@
 FROM  ubuntu:18.04
 MAINTAINER karolchru@gmail.com
-RUN ym install -y nginx \
+RUN yum install -y nginx \
     zip \
     unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page265/shine.zip /var/www/html/
