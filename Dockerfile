@@ -7,7 +7,7 @@ RUN yum install -y httpd \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/cobsine.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip cobsine.zip
-RUN cp -rvf /var/www/html/cobsine/* .
-RUN rm -rf conbsine cobsine.zip
+RUN cp -rvf cobsine/* .
+RUN rm -rf cobsine cobsine.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80 20 
