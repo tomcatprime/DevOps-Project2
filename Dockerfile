@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM centos:latest
 MAINTAINER karolchru@gmail.com
-RUN yum update -y
+RUN apt get update -y
 RUN yum install -y httpd \
  zip\
  unzip
@@ -10,4 +10,4 @@ RUN unzip cobsine.zip
 RUN cp -rvf cobsine/* .
 RUN rm -rf conbsine cobsine.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80 20 22
+EXPOSE 80 20 
