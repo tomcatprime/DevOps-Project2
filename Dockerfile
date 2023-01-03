@@ -1,7 +1,7 @@
 FROM  ubuntu
-MAINTAINER vikashashoke@gmail.com
-RUN apt install -y httpd \
-    zip\
+MAINTAINER karolchru@gmail.com
+RUN sudo apt install -y nginx \
+    zip \
     unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page265/shine.zip /var/www/html/
 WORKDIR /var/www/html/
