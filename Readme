@@ -1,0 +1,5 @@
+Setup CI/CD pipeline Jenkins-Ansible-Docker-Kubernetes
+Launch 2 instances based on latest ubuntu on AWS - 1. Jenkins server 2. Ansible + docker server
+Add webhook to github and jenkins.
+Write dockerfile
+Build docker image based on centos - change the mirrors to vault.centos.org due to CentOS 8 EOL.
