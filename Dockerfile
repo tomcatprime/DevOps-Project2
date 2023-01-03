@@ -1,4 +1,4 @@
-FROM redhat:latest
+FROM redhat/ubi9
 MAINTAINER karolchru@gmail.com
 RUN yum update -y
 RUN yum install -y httpd \
