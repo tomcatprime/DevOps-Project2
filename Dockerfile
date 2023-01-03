@@ -10,7 +10,7 @@ RUN yum install -y httpd \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/caraft.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip caraft.zip
-RUN cp -rvf caraft/* .
-RUN rm -rf caraft caraft.zip
+RUN cp -rvf html/* .
+RUN rm -rf html caraft.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80 22
