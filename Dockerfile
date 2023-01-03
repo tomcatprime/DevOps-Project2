@@ -7,10 +7,10 @@ RUN yum update -y
 RUN yum install -y httpd \
  zip\
  unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page286/caraft.zip /var/www/html/
 WORKDIR /var/www/html/
-RUN unzip photogenic.zip
-RUN cp -rvf photogenic/* .
-RUN rm -rf photogenic photogenic.zip
+RUN unzip caraft.zip
+RUN cp -rvf caraft/* .
+RUN rm -rf caraft caraft.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80 22
