@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER karolchru@gmail.com
-RUN apt-get update -y
+RUN apt update -y
 RUN apt install -y apache2 \
  zip \
  unzip
