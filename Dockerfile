@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM ubuntu:latest
 MAINTAINER karolchru@gmail.com
 RUN sudo apt update -y
 RUN sudo apt install -y apache2 \
